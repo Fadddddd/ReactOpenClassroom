@@ -13,7 +13,8 @@ export const plantList = [
 	{
 		name: 'silver pothos',
 		category: 'classic',
-		id: '3sd'
+		id: '3sd',
+		isSpecialOffer: true
 	},
 	{
 		name: 'yucca',
@@ -23,7 +24,8 @@ export const plantList = [
 	{
 		name: 'olive tree',
 		category: 'exterior',
-		id: '5pl'
+		id: '5pl',
+		isAvailable : false
 	},
 	{
 		name: 'geranium',
@@ -34,7 +36,7 @@ export const plantList = [
 		name: 'basil',
 		category: 'exterior',
         id: '7ie',
-        isBestSale: true
+        isSpecialOffer : true
 	},
 	{
 		name: 'aloe',
@@ -45,6 +47,7 @@ export const plantList = [
 	{
 		name: 'succulent',
 		category: 'succulent',
-		id: '9vn'
+		id: '9vn',
+		isSpecialOffer : true
 	}
 ]
