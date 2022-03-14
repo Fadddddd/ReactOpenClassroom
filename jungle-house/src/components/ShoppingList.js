@@ -1,4 +1,5 @@
 import { plantList } from "../datas/plantList"
+import '../styles/shoppingList.css'
 
 /* const plantList = [
     'Monstera', 
@@ -18,14 +19,15 @@ function ShoppingList() {
     return (
         <div>
             <ul>
-                {categories.map((cat) => (
+                {categories.map((cat) => ( // method that creates a list of React components
                     <li key={cat}>{cat}</li>
                 ))}
             </ul>
-            <ul>
+            <ul className='jh-plant-list'>
                 {plantList.map((plant) => (
-                    <li key={plant.id}>
-                        {plant.isBestSale && plant.category === 'classic' && <span>it's fire </span>}
+                    <li key={plant.id} className='jh-plant-item'>
+                        {plant.name}
+                        {plant.isSpecialOffer && <div className='jh-sales'>Sales</div>}
                         </li>
                 ))}
             </ul>
